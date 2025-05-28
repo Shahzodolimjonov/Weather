@@ -27,3 +27,18 @@
 
 ```bash
 git clone <URL-репозитория>
+python -m venv .venv
+.venv\Scripts\activate  # On Windows
+pip install -r requirements.txt
+```
+
+2. Запустите Docker-контейнеры:
+   
+```bash
+docker-compose up -d
+```
+3. Для запуска тестов выполните:
+   
+```bash
+docker-compose run test
+```
